@@ -1,14 +1,7 @@
-
-
-#wrap{
-	
-position: absolute;
-left: 50%;
-
-}
-
-.jqPuzzle{
-
-position: relative;
-margin-left:  -337px;
+body {
+    background: #000000 url('http://static.tumblr.com/pbieri0/YXnmxjdv9/back.jpg') repeat;
+    color:white;
+    margin: 0;
+    padding: 0;
+    
 }
