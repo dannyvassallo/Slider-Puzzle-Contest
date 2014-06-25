@@ -33,8 +33,42 @@ $.fn.jqPuzzle = function(settings, texts) {
 		// perform actions when the puzzle is solved sucessfully
 		success: {
 			fadeOriginal: true,		// cross-fade original image [true|false]
-			callback: function(modal1){
-			share_modal.open()
+			callback: function(video){
+				$(".puzzle").html("<div id=\"player\"></div>").css({"padding" : "87px 0 100px 0", "background-color" : "#fff", "width" : "640px"});
+$(function (youtubevideo){
+var firstScriptTag, player, tag;
+
+tag = document.createElement("script");
+
+tag.src = "https://www.youtube.com/player_api";
+
+firstScriptTag = document.getElementsByTagName("script")[0];
+
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+player = void 0;
+
+window.onYouTubePlayerAPIReady = function() {
+  return player = new YT.Player("player", {
+    height: "470",
+    width: "633",
+    videoId: "5Q84oP5JilU",
+    playerVars: {'autoplay': 1},
+    events: {
+      onReady: onPlayerReady,
+      onStateChange: onPlayerStateChange
+    }
+  });
+};
+
+window.onPlayerReady = function(event) {};
+
+window.onPlayerStateChange = function(event) {
+  if (event.data === YT.PlayerState.ENDED) {
+    return share_modal.open();
+  }
+};
+});
 			},	// callback a user-defined function [function]
 									// the function is passed an object as its argument
 									// which includes the fields 'moves' and 'seconds'
