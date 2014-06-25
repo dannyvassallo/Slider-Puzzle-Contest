@@ -1,0 +1,9 @@
+.footer{
+  background-image: url(https://s3.amazonaws.com/myfangate.com/rdpuzzle/footer.jpg);
+  width: 640px;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  min-height: 300px;
+}

@@ -234,11 +234,11 @@ body.remodal_active .remodal {
 
 @media only screen and (min-width: 40.063em) /* min-width 641px */ {
     .remodal {
-        max-width: 700px;
+        /*max-width: 700px;
         margin: 20px auto;
         min-height: 0;
 
         -webkit-border-radius: 6px;
-        border-radius: 6px;
+        border-radius: 6px;*/
     }
 }
