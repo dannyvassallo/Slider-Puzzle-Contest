@@ -84,3 +84,27 @@ span{
 .remodal-close{
   display: none;
 }
+
+#ss-form{
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+input{
+  width: 70%;
+height: 40px;
+}
+
+input.ss-q-checkbox{
+  width: auto;
+  height: auto;
+}
+
+  ul.ss-choices{
+    list-style: none;
+  }
+
+  label.error{
+    display: block;
+    color: red;
+  }

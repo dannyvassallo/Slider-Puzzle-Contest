@@ -37,36 +37,41 @@ share_modal.open();
 
  <div class="remodal" id="share-modal">
     <h1>Congratulations! You've solved the puzzle!</h1>
-<div class="ss-form"><form action="https://docs.google.com/a/trendsettermarketing.net/spreadsheet/formResponse?formkey=dHBqdzE1SndjQ1FOM3lTRXFXVldSNGc6MA&amp;ifq" method="POST" id="ss-form">
+    <script type="text/javascript">window.gformsubmitted=false;</script>
+<div class="ss-form"><form action="https://docs.google.com/a/trendsettermarketing.net/spreadsheet/formResponse?formkey=dHBqdzE1SndjQ1FOM3lTRXFXVldSNGc6MA&amp;ifq" method="post" id="ss-form" onSubmit="window.gformsubmitted=true;" target="hidden_iframe">
 
 
 <br>
 <div class="errorbox-good">
 <div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_0">First Name
 </label>
+<br>
 <label class="ss-q-help" for="entry_0"></label>
-<input type="text" name="entry.0.single" value="" class="ss-q-short" id="entry_0"></div></div></div>
+<input type="text" name="entry.0.single" value="" class="ss-q-short required" id="entry_0"></div></div></div>
 <br> <div class="errorbox-good">
 <div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_2">Last Name
 </label>
+<br>
 <label class="ss-q-help" for="entry_2"></label>
-<input type="text" name="entry.2.single" value="" class="ss-q-short" id="entry_2"></div></div></div>
+<input type="text" name="entry.2.single" value="" class="ss-q-short required" id="entry_2"></div></div></div>
 <br> <div class="errorbox-good">
 <div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_1">E-Mail Address
 </label>
+<br>
 <label class="ss-q-help" for="entry_1"></label>
-<input type="text" name="entry.1.single" value="" class="ss-q-short" id="entry_1"></div></div></div>
+<input type="text" name="entry.1.single" value="" class="ss-q-short required" id="entry_1"></div></div></div>
 <br> <div class="errorbox-good">
 <div class="ss-item  ss-text"><div class="ss-form-entry"><label class="ss-q-title" for="entry_4">Phone Number (Optional)
 </label>
+<br>
 <label class="ss-q-help" for="entry_4"></label>
 <input type="text" name="entry.4.single" value="" class="ss-q-short" id="entry_4"></div></div></div>
 <br> <div class="errorbox-good">
 <div class="ss-item  ss-checkbox"><div class="ss-form-entry"><label class="ss-q-title" for="entry_6">
 </label>
 <label class="ss-q-help" for="entry_6"></label>
-<ul class="ss-choices"><li class="ss-choice-item"><label class="ss-choice-label"><input type="checkbox" name="entry.6.group" checked="" value=" By entering I acknowledge that I have read, understand and agree to the Official Rules (link to the attached full rules) and the Terms of Use. *Phone Numbers are optional and will only be used to contact the winner. Entering a phone number does not increase the chances of winning." class="ss-q-checkbox" id="group_6_1">
- By entering I acknowledge that I have read, understand and agree to the Official Rules (link to the attached full rules) and the Terms of Use. *Phone Numbers are optional and will only be used to contact the winner. Entering a phone number does not increase the chances of winning.</label></li>
+<p><ul class="ss-choices"><li class="ss-choice-item"><label class="ss-choice-label"><input type="checkbox" name="entry.6.group" checked="" value="Agreed To Rules" class="ss-q-checkbox required" id="group_6_1">
+By entering I acknowledge that I have read, understand and agree to the Official Rules (link to the attached full rules) and the Terms of Use.</p><p>*Phone Numbers are optional and will only be used to contact the winner. Entering a phone number does not increase the chances of winning.</p></label></li>
 </ul></div></div></div>
 <br>
 <input type="hidden" name="pageNumber" value="0">
@@ -74,8 +79,8 @@ share_modal.open();
 
 
 <div class="ss-item ss-navigate"><div class="ss-form-entry">
-<input type="submit" name="submit" value="Submit">
-<div class="password-warning">Never submit passwords through Google Forms.</div></div></div></form>
+<input type="submit" value="Submit">
+</div></div></form>
 <script type="text/javascript">
       
       (function() {
@@ -99,7 +104,8 @@ return;
 }
 })();
       </script></div>
-    <i style="cursor:pointer; font-size: 200px;" class="fa fa-cloud-download"></i>
-    <br>
-    <a class="remodal-confirm modal-ok-style" href="#">Got it, Thanks!</a>
+  <div class="after-enter" style="color:#000; padding-right: 30px;font-size: 25px;line-height: 27px; padding: 20px 0 20px 0; max-width: 640px; margin: 0 auto;"></div>
+  <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.gformsubmitted){$('#ss-form').remove();$('.after-enter').html('Your entry has been accepted. Thank you!!');}"></iframe>
+
+    <a class="remodal-confirm modal-ok-style" style="display: none;" href="#" onClick="window.location.reload()">Click Here to Play Again!</a>
   </div>
