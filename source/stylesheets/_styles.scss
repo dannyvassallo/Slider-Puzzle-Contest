@@ -30,7 +30,7 @@ body {
             font-size: 35pt;
       }
       h2{
-            font-size: 17pt;
+            font-size: 30pt;
             margin: -30px 0 0 30px;
       }
       .h1bottom{
@@ -42,10 +42,12 @@ body {
         margin: 0 auto;
         text-transform: uppercase;
         padding-bottom: 20px;
+        font-size: 20px;
       }
       .lower-text{
         width: 530px;
         text-transform: uppercase;
+        font-size: 20px;
       }
       .gradient{
         background-image: url(https://s3.amazonaws.com/myfangate.com/rdpuzzle/gradient.jpg);
@@ -199,7 +201,16 @@ font-family: 'PlacardMT-BoldCondensed';
 
 .ss-form{  
   label, p, a{
-      font-family: 'Open Sans', sans-serif;  
+      font-family: 'Open Sans', sans-serif;
+      font-size: 26px;  
+  }
+  input{
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  input.press{
+    font-size: 30px;
+font-family: 'PlacardMT-BoldCondensed';
   }
 }
 }

@@ -6,4 +6,11 @@
   background-size: cover;
   margin: 0 auto;
   min-height: 300px;
+  a{
+    font-family: 'PlacardMT-BoldCondensed';
+    color: #000;
+    font-size: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 }
