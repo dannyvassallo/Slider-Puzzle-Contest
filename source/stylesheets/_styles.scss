@@ -108,3 +108,109 @@ input.ss-q-checkbox{
     display: block;
     color: red;
   }
+#overlay{
+position: absolute;
+width: 640px;
+height: 639px;
+background-color: rgba(0, 0, 0, 0.65);
+text-shadow: 10px 10px 10px #000;
+color: #fff;
+font-family: 'PlacardMT-BoldCondensed';
+text-transform: uppercase;
+font-size: 50px;
+top: 8px;
+left: 8px;
+  .text{
+    position: relative;
+    top: 150px;
+  }
+  .press{
+        top: 50px;
+        padding: 20px;
+        font-size: 40px !important;
+  }
+}
+.puzzlewrap{
+position: relative;
+width: 640px;
+min-height: 650px;
+
+}
+  .press{
+    position: relative;
+    border-radius: 75px;
+    border-color: #f01195;
+    background-color: #1dffff;
+    font-family: 'PlacardMT-BoldCondensed';
+    font-size: 30px;
+  }
+
+/*
+==============================================
+floating
+Made by Justin Aguilar
+www.justinaguilar.com/animations/
+justin@justinaguilar.com
+==============================================
+*/
+
+.floating{
+  animation-name: floating;
+  -webkit-animation-name: floating;
+
+  animation-duration: 1.5s; 
+  -webkit-animation-duration: 1.5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%);  
+  }
+  50% {
+    transform: translateY(8%);  
+  } 
+  100% {
+    transform: translateY(0%);
+  }     
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);  
+  }
+  50% {
+    -webkit-transform: translateY(8%);  
+  } 
+  100% {
+    -webkit-transform: translateY(0%);
+  }     
+}
+
+
+//REMODAL//
+.remodal {
+
+h1{
+font-family: 'PlacardMT-BoldCondensed';
+}
+
+.ss-form{  
+  label, p, a{
+      font-family: 'Open Sans', sans-serif;  
+  }
+}
+}
+
+.after-enter{
+      font-family: 'Open Sans', sans-serif;
+}
+
+.remodal-confirm, .remodal-comfirm:hover{
+  font-family: 'PlacardMT-BoldCondensed' !important;
+font-size: 30px !important;
+width: 300px;
+color: #000;
+}

@@ -11,9 +11,9 @@ $.fn.jqPuzzle = function(settings, texts) {
 	// default settings
 	var defaults = {
 		
-		rows: 3, 					// number of rows [3 ... 9]
-		cols: 3,		 			// number of columns [3 ... 9]
-		hole: 9,					// initial hole position [1 ... rows*columns]
+		rows: 2, 					// number of rows [3 ... 9]
+		cols: 2,		 			// number of columns [3 ... 9]
+		hole: 4,					// initial hole position [1 ... rows*columns]
 		shuffle: true,				// initially show shuffled pieces [true|false]
 		numbers: true,				// initially show numbers on pieces [true|false]
 		language: 'en',				// language for gui elements [language code]
@@ -52,7 +52,7 @@ window.onYouTubePlayerAPIReady = function() {
   return player = new YT.Player("player", {
     height: "470",
     width: "633",
-    videoId: "5Q84oP5JilU",
+    videoId: "PI-weMM167o",
     playerVars: {'autoplay': 1},
     events: {
       onReady: onPlayerReady,

@@ -1,5 +1,5 @@
 ---
-title: JqPuzzle
+title: Radio Disney Enrique Puzzle
 ---
 
 <div id="wrap" class="remodal-bg">
@@ -9,8 +9,17 @@ title: JqPuzzle
 <p class="header-text">Solve the slider puzzle to watch a special message from
 Enrique Iglesias and enter for a chance to win!</p>
 <center>
+<div class="puzzlewrap">
 <div class="puzzle">
-<img src="https://s3.amazonaws.com/myfangate.com/rdpuzzle/puzzleimg.jpg" alt="Animals crossing" id="puzzlestyle" class="jqPuzzle"/>
+<img src="https://s3.amazonaws.com/myfangate.com/rdpuzzle/puzzleimg.jpg" alt="Enrique" id="puzzlestyle" class="jqPuzzle"/>
+<div id="overlay">
+<div class="text">
+TAP THE PUZZLE PIECES<br>TO MAKE THEM MOVE <i class="fa fa-hand-o-up floating"></i>
+<br>
+<button id="begin" class="press">PRESS HERE TO BEGIN</button> 
+</div>
+</div>
+</div>
 </div>
 <h1 class="h1bottom">grand prize</h1>
 <p class="lower-text">One winner will fly to New York to meet 
@@ -79,7 +88,7 @@ By entering I acknowledge that I have read, understand and agree to the <a href=
 
 
 <div class="ss-item ss-navigate"><div class="ss-form-entry">
-<input name="submit" type="submit" value="Submit">
+<input class="press" name="submit" type="submit" value="Submit">
 </div></div></form>
 <script type="text/javascript">
       
@@ -107,5 +116,5 @@ return;
   <div class="after-enter" style="color:#000; padding-right: 30px;font-size: 25px;line-height: 27px; padding: 20px 0 20px 0; max-width: 640px; margin: 0 auto;"></div>
   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(window.gformsubmitted){$('#ss-form').remove();$('.after-enter').html('Your entry has been accepted. Thank you!!');}"></iframe>
 
-    <a class="remodal-confirm modal-ok-style" style="display: none;" href="#" onClick="window.location.reload()">Click Here to Play Again!</a>
+    <a class="remodal-confirm modal-ok-style press" style="display: none;" href="#" onClick="window.location.reload()">Click Here to Play Again!</a>
   </div>

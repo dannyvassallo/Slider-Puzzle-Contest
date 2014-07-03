@@ -47,3 +47,12 @@ $(function(){
 
 
 });
+
+
+//BEGIN//
+
+$(function(){
+  $("#begin , #overlay").on('click', function(){
+    $("#overlay").fadeOut( 'slow' );
+  });
+});
