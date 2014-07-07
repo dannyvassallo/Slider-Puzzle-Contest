@@ -3,6 +3,7 @@ $(function(){
   var after_submit = function(form){
     $("#ss-form").css("display","none");
     $(".remodal-confirm.modal-ok-style").css("display", "visible");
+    ga('send', 'event', 'Puzzle', 'Form', 'Submitted');
     form.submit();    
   }
 
@@ -54,5 +55,10 @@ $(function(){
 $(function(){
   $("#begin , #overlay").on('click', function(){
     $("#overlay").fadeOut( 'slow' );
+    ga('send', 'event', 'Puzzle', 'Game', 'New Game');
   });
 });
+
+
+
+

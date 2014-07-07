@@ -35,7 +35,9 @@ $.fn.jqPuzzle = function(settings, texts) {
 			fadeOriginal: true,		// cross-fade original image [true|false]
 			callback: function(video){
 				$(".puzzle").html("<div id=\"player\"></div>").css({"padding" : "87px 0 100px 0", "background-color" : "#fff", "width" : "640px"});
+    		ga('send', 'event', 'Puzzle', 'Game', 'Solved');
 $(function (youtubevideo){
+ga('send', 'event', 'Puzzle', 'Video', 'Opened');
 var firstScriptTag, player, tag;
 
 tag = document.createElement("script");
@@ -65,7 +67,9 @@ window.onPlayerReady = function(event) {};
 
 window.onPlayerStateChange = function(event) {
   if (event.data === YT.PlayerState.ENDED) {
+    ga('send', 'event', 'Puzzle', 'Video', 'Ended');
     return share_modal.open();
+    ga('send', 'event', 'Puzzle', 'Form', 'Opened');
   }
 };
 });
