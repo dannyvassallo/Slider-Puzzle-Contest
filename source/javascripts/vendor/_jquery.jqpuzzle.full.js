@@ -11,9 +11,9 @@ $.fn.jqPuzzle = function(settings, texts) {
 	// default settings
 	var defaults = {
 		
-		rows: 4, 					// number of rows [3 ... 9]
-		cols: 4,		 			// number of columns [3 ... 9]
-		hole: 16,					// initial hole position [1 ... rows*columns]
+		rows: 3, 					// number of rows [3 ... 9]
+		cols: 3,		 			// number of columns [3 ... 9]
+		hole: 9,					// initial hole position [1 ... rows*columns]
 		shuffle: true,				// initially show shuffled pieces [true|false]
 		numbers: true,				// initially show numbers on pieces [true|false]
 		language: 'en',				// language for gui elements [language code]
@@ -33,8 +33,46 @@ $.fn.jqPuzzle = function(settings, texts) {
 		// perform actions when the puzzle is solved sucessfully
 		success: {
 			fadeOriginal: true,		// cross-fade original image [true|false]
-			callback: function(modal1){
-			share_modal.open()
+			callback: function(video){
+				$(".puzzle").html("<div id=\"player\"></div>").css({"padding" : "87px 0 100px 0", "background-color" : "#fff", "width" : "640px"});
+    		ga('send', 'event', 'Puzzle', 'Game', 'Solved');
+$(function (youtubevideo){
+ga('send', 'event', 'Puzzle', 'Video', 'Opened');
+var firstScriptTag, player, tag;
+
+tag = document.createElement("script");
+
+tag.src = "https://www.youtube.com/player_api";
+
+firstScriptTag = document.getElementsByTagName("script")[0];
+
+firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+player = void 0;
+
+window.onYouTubePlayerAPIReady = function() {
+  return player = new YT.Player("player", {
+    height: "470",
+    width: "633",
+    videoId: "PI-weMM167o",
+    playerVars: {'autoplay': 1},
+    events: {
+      onReady: onPlayerReady,
+      onStateChange: onPlayerStateChange
+    }
+  });
+};
+
+window.onPlayerReady = function(event) {};
+
+window.onPlayerStateChange = function(event) {
+  if (event.data === YT.PlayerState.ENDED) {
+    ga('send', 'event', 'Puzzle', 'Video', 'Ended');
+    return share_modal.open();
+    ga('send', 'event', 'Puzzle', 'Form', 'Opened');
+  }
+};
+});
 			},	// callback a user-defined function [function]
 									// the function is passed an object as its argument
 									// which includes the fields 'moves' and 'seconds'

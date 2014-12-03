@@ -1,0 +1,227 @@
+@font-face {
+  font-family: 'PlacardMT-BoldCondensed';
+  src: url('../fonts/PlacardMT-BoldCondensed.eot?') format('eot'), 
+       url('../fonts/PlacardMT-BoldCondensed.woff') format('woff'), 
+       url('../fonts/PlacardMT-BoldCondensed.ttf')  format('truetype'),
+       url('../fonts/PlacardMT-BoldCondensed.svg#PlacardMT-BoldCondensed') format('svg');
+}
+
+
+body {
+    color:#000;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+
+#wrap{
+      background: #fff url('https://s3.amazonaws.com/myfangate.com/rdpuzzle/background.jpg') no-repeat;
+      background-position: top center;
+      background-size: 640px;
+      margin: 0 auto;
+      text-align: center;
+      font-family: 'Open Sans', sans-serif;
+      
+      .h1top, .h1bottom, h2{
+           font-family: 'PlacardMT-BoldCondensed';
+           text-transform: uppercase;
+      }
+      .h1top, .h1bottom{
+            font-size: 35pt;
+      }
+      h2{
+            font-size: 30pt;
+            margin: -30px 0 0 30px;
+      }
+      .h1bottom{
+        margin: 0 auto;
+      }
+      .header-text{
+        width: 500px;
+        text-align: center;
+        margin: 0 auto;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        font-size: 20px;
+      }
+      .lower-text{
+        width: 530px;
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+      .gradient{
+        background-image: url(https://s3.amazonaws.com/myfangate.com/rdpuzzle/gradient.jpg);
+        background-repeat: repeat-x;
+        height: 42px;
+        width: 640px; 
+        margin: 0 auto;
+        p{
+        padding-top: 10px;
+        font-family: 'PlacardMT-BoldCondensed';
+        text-transform: uppercase;
+        font-size: 18pt;
+        } 
+      }
+}
+
+span{
+  color: #dc54a1;
+  padding: 20px;
+  text-shadow: 1px 1px 10px #fff;
+  font-size: 20px;
+}
+
+.jqPuzzle .jqp-piece:hover {
+ border-style: solid; 
+}
+
+.puzzle, .jqpuzzle{
+  margin: 0 auto !important;
+}
+
+.logo{
+  padding: 20px 0 0 0;
+}
+
+.remodal-close{
+  display: none;
+}
+
+#ss-form{
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+input{
+  width: 70%;
+height: 40px;
+}
+
+input.ss-q-checkbox{
+  width: auto;
+  height: auto;
+}
+
+  ul.ss-choices{
+    list-style: none;
+  }
+
+  label.error{
+    display: block;
+    color: red;
+  }
+#overlay{
+position: absolute;
+width: 640px;
+height: 639px;
+background-color: rgba(0, 0, 0, 0.65);
+text-shadow: 10px 10px 10px #000;
+color: #fff;
+font-family: 'PlacardMT-BoldCondensed';
+text-transform: uppercase;
+font-size: 50px;
+top: 8px;
+left: 8px;
+  .text{
+    position: relative;
+    top: 150px;
+  }
+  .press{
+        top: 50px;
+        padding: 20px;
+        font-size: 40px !important;
+  }
+}
+.puzzlewrap{
+position: relative;
+width: 640px;
+min-height: 650px;
+
+}
+  .press{
+    position: relative;
+    border-radius: 75px;
+    border-color: #f01195;
+    background-color: #1dffff;
+    font-family: 'PlacardMT-BoldCondensed';
+    font-size: 30px;
+  }
+
+/*
+==============================================
+floating
+Made by Justin Aguilar
+www.justinaguilar.com/animations/
+justin@justinaguilar.com
+==============================================
+*/
+
+.floating{
+  animation-name: floating;
+  -webkit-animation-name: floating;
+
+  animation-duration: 1.5s; 
+  -webkit-animation-duration: 1.5s;
+
+  animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0%);  
+  }
+  50% {
+    transform: translateY(8%);  
+  } 
+  100% {
+    transform: translateY(0%);
+  }     
+}
+
+@-webkit-keyframes floating {
+  0% {
+    -webkit-transform: translateY(0%);  
+  }
+  50% {
+    -webkit-transform: translateY(8%);  
+  } 
+  100% {
+    -webkit-transform: translateY(0%);
+  }     
+}
+
+
+//REMODAL//
+.remodal {
+
+h1{
+font-family: 'PlacardMT-BoldCondensed';
+}
+
+.ss-form{  
+  label, p, a{
+      font-family: 'Open Sans', sans-serif;
+      font-size: 26px;  
+  }
+  input{
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+  }
+  input.press{
+    font-size: 30px;
+font-family: 'PlacardMT-BoldCondensed';
+  }
+}
+}
+
+.after-enter{
+      font-family: 'Open Sans', sans-serif;
+}
+
+.remodal-confirm, .remodal-comfirm:hover{
+  font-family: 'PlacardMT-BoldCondensed' !important;
+font-size: 30px !important;
+width: 300px;
+color: #000;
+}
